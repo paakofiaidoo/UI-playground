@@ -7,32 +7,28 @@
   <body>
     <nav class="navbar">
       <div class="left">
-        <img
-          class="navIcon"
-          src="../fontawesome-free-5.15.3-web/svgs/solid/bars.svg"
-          alt="menu bars"
-        />
+        <img class="icon" src="../fontawesome/svgs/solid/bars.svg" alt="add" />
       </div>
 
       <div class="right">
         <img
-          class="navIcon"
-          src="../fontawesome-free-5.15.3-web/svgs/solid/plus-square.svg"
+          class="icon"
+          src="../fontawesome/svgs/solid/plus-square.svg"
           alt="add"
         />
         <img
-          class="navIcon"
-          src="../fontawesome-free-5.15.3-web/svgs/solid/search.svg"
+          class="icon"
+          src="../fontawesome/svgs/solid/search.svg"
           alt="search"
         />
         <img
-          src="../fontawesome-free-5.15.3-web/svgs/solid/bell.svg"
-          class="navIcon"
+          src="../fontawesome/svgs/solid/bell.svg"
+          class="icon"
           alt="notification"
         />
         <img
-          class="navIcon"
-          src="../fontawesome-free-5.15.3-web/svgs/solid/user-astronaut.svg"
+          class="icon"
+          src="../fontawesome/svgs/solid/user-astronaut.svg"
           alt="user"
         />
       </div>
@@ -40,24 +36,73 @@
 
     <main class="main">
       <div class="sideMenu">
-        <h4r>Collections</h4r>
-        <li class="menuItem">School</li>
-        <li class="menuItem">Personal</li>
-        <li class="menuItem">Design</li>
+        <h4>Collections</h4>
+        <li class="menuItem">
+          <img
+            class="icon"
+            src="../fontawesome/svgs/solid/school.svg"
+            alt="add"
+          />
+          <a href="#">School</a>
+        </li>
+        <li class="menuItem">
+          <img
+            class="icon"
+            src="../fontawesome/svgs/solid/user-alt.svg"
+            alt="add"
+          /><a href="#">Personal</a>
+        </li>
+        <li class="menuItem">
+          <img
+            class="icon"
+            src="../fontawesome/svgs/solid/desktop.svg"
+            alt="add"
+          /><a href="#">Design</a>
+        </li>
       </div>
-      <div class="content">
-        <div class="title">School</div>
+      <content class="content">
+        <div class="title">
+          <img
+            class="icon"
+            src="../fontawesome/svgs/solid/arrow-left.svg"
+            alt="back"
+          />
+          <h2>School</h2>
+        </div>
+        <hr />
         <button class="addTask">
           <img
-            class="navIcon"
-            src="../fontawesome-free-5.15.3-web/svgs/solid/plus-square.svg"
+            class="icon"
+            src="../fontawesome/svgs/solid/plus-square.svg"
             alt="add"
           />
           <p>Add a task</p>
         </button>
-        <div class="uncomplete"></div>
-        <div class="complete"></div>
-      </div>
+        <hr />
+        <div class="uncomplete">
+          <h2 class="title">Task - 3</h2>
+          <div class="form-group">
+            <input type="checkbox" id="first"!checked>
+            <label for="first">start learning svelte</label>
+          </div>
+          <div class="form-group">
+            <input type="checkbox" id="second"!checked>
+            <label for="second">start learning svelte</label>
+          </div>
+          <div class="form-group">
+            <input type="checkbox" id="third" !checked>
+            <label for="third">start learning svelte</label>
+          </div>
+          </div>
+        </div>
+        <div class="complete"><h2 class="title">Complete - 1</h2>
+          <div class="form-group">
+            <input type="checkbox" id="fouth" checked>
+            <label for="fouth">start learning svelte</label>
+          </div>
+          
+          </div></div>
+      </content>
     </main>
   </body>
 </html>
