@@ -119,6 +119,7 @@ body {
 .about {
   position: relative;
   top: -3rem;
+
   .section-title {
     text-align: start;
     background-color: #fec80b;
@@ -166,7 +167,7 @@ body {
     .aboutImg {
       height: auto;
       width: 50%;
-      background-image: url(./work.jpg);
+      background-image: url("./work.jpg");
       background-size: cover;
       background-repeat: no-repeat;
       background-position: center;
@@ -174,6 +175,22 @@ body {
       position: relative;
       top: -3rem;
       right: 3rem;
+    }
+  }
+  @media only screen and (max-width: 600px) {
+    .section-content {
+      background-color: red;
+      flex-direction: column-reverse;
+      .aboutText {
+        width: 100%;
+        text-align: center;
+      }
+      .aboutImg {
+        width: 80%;
+        height: 100%;
+        right: 0;
+        margin: auto;
+      }
     }
   }
 }
