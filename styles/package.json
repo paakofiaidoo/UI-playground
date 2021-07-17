@@ -1,0 +1,5 @@
+{
+    "scripts": {
+        "scss-w":"sass ./index.scss ./index.css -w"
+    }
+}

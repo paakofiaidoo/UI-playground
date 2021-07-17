@@ -1,0 +1,118 @@
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+.f-c {
+  display: flex;
+  flex-direction: column;
+}
+body {
+  @extend .f-c;
+  width: 100vw;
+  height: 100%;
+  max-width: 100%;
+  font-family: sans-serif;
+  background-color: #eee;
+  color: #000;
+}
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+button {
+  border: 0px;
+}
+.container {
+  display: flex;
+  justify-content: center;
+}
+.button {
+  text-transform: uppercase;
+  padding: 1rem;
+  font-weight: 700;
+  font-size: 0.7rem;
+  border: 0px;
+  border-radius: 2rem;
+  display: flex;
+  align-items: center;
+  margin: auto;
+}
+.icon {
+  height: 1.5rem;
+  width: 1.5rem;
+  margin: 1rem;
+}
+img {
+  width: 100%;
+  height: auto;
+}
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: auto;
+  width: auto;
+  padding: 1rem;
+  img {
+    width: 80%;
+  }
+  .title {
+    color: #000;
+  }
+}
+.navbar {
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  height: min-content;
+  .links {
+    justify-content: space-between;
+    li {
+      margin: 1rem;
+    }
+  }
+}
+.hero {
+  display: flex;
+}
+.main {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.section {
+  height: 100%;
+  width: 100%;
+  &-title {
+    text-align: center;
+    font-size: 1.9rem;
+    padding: 1rem;
+    color: #333;
+  }
+}
