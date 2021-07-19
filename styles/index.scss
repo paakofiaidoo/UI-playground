@@ -34,6 +34,10 @@ body {
   font-family: sans-serif;
   background-color: #eee;
   color: #000;
+  transition: all 250ms ease-in-out;
+}
+div {
+  display: flex;
 }
 li {
   list-style: none;
@@ -46,6 +50,7 @@ button {
 }
 .container {
   display: flex;
+  flex-direction: column;
   justify-content: center;
 }
 .button {
@@ -85,6 +90,7 @@ img {
   }
 }
 .navbar {
+  display: flex;
   width: 100%;
   justify-content: space-between;
   align-items: center;
@@ -94,6 +100,11 @@ img {
     justify-content: space-between;
     li {
       margin: 1rem;
+    }
+  }
+  @media only screen and (max-width: 600px) {
+    .links {
+      display: none;
     }
   }
 }
@@ -115,4 +126,28 @@ img {
     padding: 1rem;
     color: #333;
   }
+}
+.more {
+  display: flex;
+  align-items: center;
+  text-transform: capitalize;
+  font-weight: 600;
+  font-size: 0.9rem;
+  margin-top: 1rem;
+  cursor: pointer;
+  &::before {
+    content: "";
+    width: 0.5rem;
+    height: 0.5rem;
+    background-color: #fec200;
+    position: relative;
+    border-radius: 50%;
+    margin-right: 0.2rem;
+  }
+}
+.context {
+  color: #fec200;
+  font-weight: 200;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
 }
