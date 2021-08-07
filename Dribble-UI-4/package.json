@@ -1,5 +1,0 @@
-{
-    "scripts": {
-        "scss-w":"sass ./style.scss ./style.css -w"
-    }
-}
