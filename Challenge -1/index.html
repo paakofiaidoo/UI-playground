@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>Section Positioning</title>
+	<link rel="stylesheet" href="./style.css" />
+	<link rel="stylesheet" href="../fontawesome/css/all.css">
+</head>
+
+<body>
+	<div class="login form active">
+		<div class="inp">
+			<h1 class="title">Sign up</h1>
+			<div class="field">
+				<input type="text" name="test" id="">
+				<span>
+					<i class="fas fa-user"></i>
+					<p>Full Name</p>
+				</span>
+			</div>
+			<div class="field">
+				<input type="text" name="test" id="">
+				<span>
+					<i class="fas fa-envelope"></i>
+					<p>Email</p>
+				</span>
+			</div>
+			<div class="field">
+				<input type="text" name="test" id="">
+				<span>
+					<i class="fas fa-lock"></i>
+					<p>Password</p>
+				</span>
+			</div>
+		</div>
+		<button type="submit">SIGN UP</button>
+	</div>
+	<div class="signUp form not">
+		<div class="inp">
+			<h1 class="title">login</h1>
+			<div class="field">
+				<input type="text" name="test" id="">
+				<span>
+					<i class="fas fa-envelope"></i>
+					<p>Email</p>
+				</span>
+			</div>
+			<div class="field">
+				<input type="text" name="test" id="">
+				<span>
+					<i class="fas fa-lock"></i>
+					<p>Password</p>
+				</span>
+			</div>
+		</div>
+		<button type="submit">LOGIN</button>
+	</div>
+</body>
+<script>
+	let login = document.querySelector('.login');
+	let signUp = document.querySelector('.signUp');
+	login.addEventListener('click', () => {
+		login.classList.add('active');
+		signUp.classList.remove('active');
+		signUp.classList.add('not');
+		login.classList.remove('not');
+	});
+	signUp.addEventListener('click', () => {
+		signUp.classList.add('active');
+		login.classList.remove('active');
+		login.classList.add('not');
+		signUp.classList.remove('not');
+	});
+
+</script>
+
+</html>
