@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>Section Positioning</title>
+	<link rel="stylesheet" href="./style.css" />
+	<link rel="stylesheet" href="../fontawesome/css/all.css">
+</head>
+
+<body>
+
+	<div class="phone">
+		<nav class="expand">
+			<i class="fas fa-arrow-left"></i>
+			<div class="playing">
+				<img src="./work.jpg" alt="">
+			</div>
+			<i class="fas fa-user"></i>
+		</nav>
+		<div class="player">
+			<div class="controls">
+				<i class="fas fa-pause"></i>
+				<input type="range" name="" id="">
+				<i class="fas fa-random"></i>
+			</div>
+			<hr>
+		</div>
+		<main class="playList">
+			<div class="currentPlay">
+				<div class="title">
+					<img src="./work.jpg" alt="">
+					<div class="txt">
+						<h3>into you</h3>
+						<p>juki-juik</p>
+					</div>
+					<i class="fa fa-heart" style="color: red;"></i>
+				</div>
+				<div class="dis">
+					<span>Lorem ipsum dolor sit,</span>
+					<span>amet consectetur adipisicing elit. </span>
+					<span>Ducimus error aut non ipsa</span>
+					<span>voluptatum, illum voluptate totam</span>
+					<span>vitae? Esse est ducimus eum laborum rerum! Cum, hic. Natus cumque</span>
+					<span>distinctio saepe!</span>
+				</div>
+			</div>
+			<div class="list">
+				<hr>
+				<div class="title">
+					<img src="./work.jpg" alt="">
+					<div class="txt">
+						<h3>into you</h3>
+						<p>juki-juik</p>
+					</div>
+					<i class="fa fa-grip-lines-vertical" style="color: red;"></i>
+				</div>
+				<div class="title">
+					<img src="./work.jpg" alt="">
+					<div class="txt">
+						<h3>into you</h3>
+						<p>juki-juik</p>
+					</div>
+					<i class="fa fa-heart" style="color: rgba(255, 255, 255, 0.452);"></i>
+				</div>
+				<div class="title">
+					<img src="./work.jpg" alt="">
+					<div class="txt">
+						<h3>into you</h3>
+						<p>juki-juik</p>
+					</div>
+					<i class="fa fa-heart" style="color: red;"></i>
+				</div>
+			</div>
+		</main>
+	</div>
+</body>
+<script>
+	let login = document.querySelector('.login');
+	let signUp = document.querySelector('.signUp');
+	login.addEventListener('click', () => {
+		login.classList.add('active');
+		signUp.classList.remove('active');
+		signUp.classList.add('not');
+		login.classList.remove('not');
+	});
+	signUp.addEventListener('click', () => {
+		signUp.classList.add('active');
+		login.classList.remove('active');
+		login.classList.add('not');
+		signUp.classList.remove('not');
+	});
+
+</script>
+
+</html>
